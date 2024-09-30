@@ -25,8 +25,8 @@ resource "aws_instance" "app_server" {
 }
 
 resource "aws_key_pair" "clo835_key_pair" {
-  key_name   = "clo835_key_pair"  # Name of the key pair in AWS
-  public_key = file("~/.ssh/clo835_key.pub")  # Path to the public key file
+  key_name   = "clo835_key_pair"             # Name of the key pair in AWS
+  public_key = file("~/.ssh/clo835_key.pub") # Path to the public key file
 }
 
 
